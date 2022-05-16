@@ -75,28 +75,28 @@ const SortableTblPager = (props) => {
 	return (
 		<Wrap className={defaultCSS ? "defaultCSS" : ""}>
 			<div className="left">
-				<button
+				<a
 					type="button"
 					name=""
 					disabled={prevDisableStyle}
 					onClick={subPage}
 				>
-					Prev
-				</button>
+					Précédent
+				</a>
 				<DropdownGroup
 					selected={curr + 1}
 					options={pageOptions}
 					defaultCSS={defaultCSS}
 					callback={setCurrentPage}
 				/>
-				<button
+				<a
 					type="button"
 					name=""
 					disabled={nextDisableStyle}
 					onClick={addPagge}
 				>
-					Next
-				</button>
+					Suivant
+				</a>
 				<div>display</div>
 				<DropdownGroup
 					selected={rowPerPageText}
